@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Basmati",
+		"weight": 10,
+		"price per kg": 50
+	},
+	{
+		"name": "Bean",
+		"weight": 5,
+		"price per kg": 100
+	},
+	 {
+		"name": "Bread wheat",
+		"weight": 10,
+		"price per kg": 200
+	}
+]
