@@ -1,0 +1,22 @@
+[
+	{
+		"stockname": "HDFC Bank",
+		"shareprice": 1000,
+		"noofshares": 50
+	},
+	{
+		"stockname": "Reliance",
+		"shareprice": 5000,
+		"noofshares": 100
+	},
+	 {
+		"stockname": "Jio",
+		"shareprice": 10000,
+		"noofshares": 200
+	},
+	{
+		"stockname": "Tata Consultancy",
+		"shareprice": 5000,
+		"noofshares": 200
+	}
+]
