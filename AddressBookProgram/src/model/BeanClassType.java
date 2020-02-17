@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 
 
 
-public class BeanClass
+public class BeanClassType
 {
  private String firstName;
  private String  lastName;
@@ -19,7 +19,7 @@ public class BeanClass
  private String zip;
  private String phoneNumber;
  BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
- public BeanClass() throws IOException
+ public BeanClassType() throws IOException
  {
  System.out.print("Enter the firstName:");
  this.firstName=br.readLine();

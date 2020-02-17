@@ -2,7 +2,7 @@ package controller;
 
 import java.io.IOException;
 
-import model.BeanClass;
+import model.BeanClassType;
 import repository.RepositoryMethodsImplementation;
 import utility.InputScanner;
 
@@ -32,7 +32,7 @@ switch(choice)
 {
 case 1:
 {
-BeanClass bean=new BeanClass();
+BeanClassType bean=new BeanClassType();
 repository.addThePersonDetails(filepath,bean);
 break;
 }
@@ -63,6 +63,7 @@ case 7:
 {
 	repository.sortByPhoneNumber(filepath);
 }*/
+
 case 8:
 {
 	repository.searchTheSinglePersonDetails(filepath);

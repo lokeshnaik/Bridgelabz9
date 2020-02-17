@@ -18,7 +18,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 //import org.json.simple.parser.ParseException;
 
-import model.BeanClass;
+import model.BeanClassType;
 import service.ServicesProvidingInterface;
 import utility.InputScanner;
 import utility.UtilLogicsCommonCode;
@@ -46,13 +46,13 @@ arr=(JSONArray) new JSONParser().parse(new FileReader(filepath));
 System.out.println(e);
 }
 }
-json.put("firstName",((BeanClass) o).getFirstName());
-json.put("lastName",((BeanClass) o).getLastName());
-json.put("address",((BeanClass) o).getAddress());
-json.put("city",((BeanClass) o).getCity());
-json.put("state",((BeanClass) o).getState());
-json.put("zip",((BeanClass) o).getZip());
-json.put("phoneNumber",((BeanClass) o).getPhoneNumber());
+json.put("firstName",((BeanClassType) o).getFirstName());
+json.put("lastName",((BeanClassType) o).getLastName());
+json.put("address",((BeanClassType) o).getAddress());
+json.put("city",((BeanClassType) o).getCity());
+json.put("state",((BeanClassType) o).getState());
+json.put("zip",((BeanClassType) o).getZip());
+json.put("phoneNumber",((BeanClassType) o).getPhoneNumber());
 FileWriter fw=new FileWriter(filepath);
 PrintWriter pw=new PrintWriter(fw);
 arr.add(json);
@@ -69,7 +69,7 @@ System.out.println(e);
 @Override
 public void deleteThePersonDetails(String filepath)
 {
-System.out.print("Enter the item name to remove from Inventory");
+System.out.print("Enter the person name to remove from the addressbook");
 String name=InputScanner.stringInput();
 JSONArray array=null;
 try {
@@ -209,13 +209,13 @@ if(name.equalsIgnoreCase((String) jo.get("firstName")))
 {
 k++;
 System.out.println("Person details are:");
-   System.out.println((String)jo.get("firstName"));
-   System.out.println((String)jo.get("lastName"));
-   System.out.println((String)jo.get("address"));
-   System.out.println((String)jo.get("city"));
-   System.out.println((String)jo.get("state"));
-   System.out.println((String)jo.get("zip"));
-   System.out.println((String)jo.get("phoneNumber"));
+   System.out.println("firstName="+(String)jo.get("firstName"));
+   System.out.println("latName="+(String)jo.get("lastName"));
+   System.out.println("address="+(String)jo.get("address"));
+   System.out.println("city="+(String)jo.get("city"));
+   System.out.println("state="+(String)jo.get("state"));
+   System.out.println("zip="+(String)jo.get("zip"));
+   System.out.println("phoneNumber="+(String)jo.get("phoneNumber"));
 }
 
 }
